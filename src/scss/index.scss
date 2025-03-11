@@ -1,11 +1,29 @@
-@import url("../scss/_fonts.scss");
-@import url("../scss/_mixins.scss");
-@import url("../scss/_variables.scss");
-@import url("../scss/header.scss");
-@import url("../scss/features.scss");
-@import url("../scss/gallery.scss");
-@import url("../scss/team.scss");
-@import url("../scss/slider.scss");
-@import url("../scss/promo.scss");
-@import url("../scss/info.scss");
-@import url("../scss/footer.scss");
+@import "../scss/fonts";
+@import "../scss/variables";
+@import "../scss/mixins";
+@import "../scss/header.scss";
+@import "../scss/features.scss";
+@import "../scss/gallery.scss";
+@import "../scss/team.scss";
+@import "../scss/slider.scss";
+@import "../scss/promo.scss";
+@import "../scss/info.scss";
+@import "../scss/footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px; /*так принято*/
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+html {
+  font-family: "Raleway", sans-serif; //шрифт по умолчанию
+}
