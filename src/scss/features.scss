@@ -1,0 +1,28 @@
+.features {
+  background-color: #fff;
+  padding: 116px 0 133px 0;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    //высота ряда будет подстраиваться под содержимое
+    row-gap: 90px;
+    .grid__item {
+      text-align: center;
+      .features__icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 70px;
+      }
+      .features__title {
+        @include furth_title;
+        margin-bottom: 53px;
+      }
+      .features__desc p {
+        font-size: 18px;
+        font-weight: 400px;
+        width: 370px;
+      }
+    }
+  }
+}
