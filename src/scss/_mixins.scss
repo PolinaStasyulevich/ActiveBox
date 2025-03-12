@@ -35,3 +35,37 @@
   color: #000000;
   text-transform: uppercase;
 }
+@mixin link_normal {
+  color: #ffffff;
+  background-color: #ff4343;
+  font-size: 24px;
+  font-weight: 900px;
+  width: 370px;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+@mixin link_hover {
+  color: #ffffff;
+  background-color: #e71414;
+  font-size: 24px;
+  font-weight: 900px;
+  width: 370px;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+@mixin link_active {
+  color: #ffffff;
+  background-color: #ff4343;
+  font-size: 24px;
+  font-weight: 900px;
+  width: 370px;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  box-shadow: 4px 4px 30px rgba(255, 67, 67, 1);
+}
