@@ -1,4 +1,50 @@
-.team img {
-  width: 10px;
-  height: 10px;
+.team {
+  background-color: #fff;
+  padding: 114px 0;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__member {
+    width: 270px;
+  }
+  &__photo {
+    margin-bottom: 30px;
+    & img {
+      width: 270px;
+      height: 270px;
+      object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+      object-position: center; /* Центрирует изображение */
+    }
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+  &__position {
+    color: #ff4343;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 18px;
+  }
+  &__desc {
+    margin-bottom: 38px;
+    & p {
+      color: #6c7279;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  .fa-facebook-f {
+    @include social-fb;
+  }
+  .fa-twitter {
+    @include social-tw;
+  }
+  .fa-linkedin {
+    @include social-linkedin;
+  }
 }

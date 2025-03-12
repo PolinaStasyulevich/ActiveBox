@@ -69,3 +69,24 @@
   margin: auto;
   box-shadow: 4px 4px 30px rgba(255, 67, 67, 1);
 }
+@mixin social-fb {
+  color: #c6cbcd;
+  border: 1px solid #c6cbcd;
+  width: 39px;
+  line-height: 39px;
+  text-align: center;
+}
+@mixin social-tw {
+  color: #c6cbcd;
+  border: 1px solid #c6cbcd;
+  width: 39px;
+  line-height: 39px;
+  text-align: center;
+}
+@mixin social-linkedin {
+  color: #c6cbcd;
+  border: 1px solid #c6cbcd;
+  width: 39px;
+  line-height: 39px;
+  text-align: center;
+}
