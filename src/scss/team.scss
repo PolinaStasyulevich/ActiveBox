@@ -4,47 +4,140 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+    margin: 0 -15px; //отмена отступа по краям
   }
   &__member {
-    width: 270px;
+    margin: 0 15px; //безопасный отступ
   }
   &__photo {
-    margin-bottom: 30px;
     & img {
-      width: 270px;
-      height: 270px;
       object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
       object-position: center; /* Центрирует изображение */
     }
   }
   &__name {
-    font-size: 24px;
     font-weight: 900;
-    margin-bottom: 5px;
+    color: #2d3033;
   }
   &__position {
     color: #ff4343;
-    font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 18px;
   }
   &__desc {
-    margin-bottom: 38px;
     & p {
       color: #6c7279;
-      font-size: 18px;
       font-weight: 400;
     }
   }
-  .fa-facebook-f {
-    @include social-fb;
+
+  @media (min-width: 1201px) {
+    .team__member {
+      width: 270px;
+    }
+    .team__photo {
+      margin-bottom: 30px;
+    }
+    .team__photo img {
+      width: 270px;
+      height: 270px;
+    }
+    .team__name {
+      font-size: 24px;
+      margin-bottom: 7px;
+    }
+    .team__position {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+    .team__desc {
+      margin-bottom: 38px;
+    }
+    .team__desc p {
+      font-size: 18px;
+    }
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-linkedin {
+      @include social-icon-desctop;
+    }
   }
-  .fa-twitter {
-    @include social-tw;
+
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 970px;
+    }
+    .team__member {
+      width: 227px;
+    }
+    .team__photo {
+      margin-bottom: 25px;
+    }
+    .team__photo img {
+      width: 227px;
+      height: 227px;
+    }
+    .team__name {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .team__position {
+      font-size: 14px;
+      margin-bottom: 22.5px;
+    }
+    .team__desc {
+      margin-bottom: 38px;
+    }
+    .team__desc p {
+      font-size: 14px;
+    }
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-linkedin {
+      @include social-icon-tablet;
+    }
   }
-  .fa-linkedin {
-    @include social-linkedin;
+
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+    .team__wrap {
+      flex-wrap: wrap;
+      gap: 51px;
+    }
+    .team__member {
+      width: 100%;
+    }
+
+    .team__photo {
+      margin-bottom: 25px;
+    }
+    .team__photo img {
+      width: 100%; /* Растягиваем по ширине контейнера */
+      height: 100%; /* Растягиваем по высоте контейнера */
+      object-fit: cover; /* Масштабируем без потери качества */
+      object-position: center; /* Центрируем изображение */
+    }
+    .team__name {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .team__position {
+      font-size: 14px;
+      margin-bottom: 38px;
+    }
+    .team__desc {
+      margin-bottom: 55px;
+    }
+    .team__desc p {
+      font-size: 14px;
+    }
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-linkedin {
+      @include social-icon-desctop;
+    }
   }
 }

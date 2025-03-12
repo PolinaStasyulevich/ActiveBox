@@ -40,7 +40,6 @@
   background-color: #ff4343;
   font-size: 24px;
   font-weight: 900px;
-  width: 370px;
   line-height: 80px;
   text-align: center;
   display: block;
@@ -51,7 +50,6 @@
   background-color: #e71414;
   font-size: 24px;
   font-weight: 900px;
-  width: 370px;
   line-height: 80px;
   text-align: center;
   display: block;
@@ -62,31 +60,23 @@
   background-color: #ff4343;
   font-size: 24px;
   font-weight: 900px;
-  width: 370px;
   line-height: 80px;
   text-align: center;
   display: block;
   margin: auto;
   box-shadow: 4px 4px 30px rgba(255, 67, 67, 1);
 }
-@mixin social-fb {
+@mixin social-icon-desctop {
   color: #c6cbcd;
   border: 1px solid #c6cbcd;
   width: 39px;
   line-height: 39px;
   text-align: center;
 }
-@mixin social-tw {
+@mixin social-icon-tablet {
   color: #c6cbcd;
   border: 1px solid #c6cbcd;
-  width: 39px;
-  line-height: 39px;
-  text-align: center;
-}
-@mixin social-linkedin {
-  color: #c6cbcd;
-  border: 1px solid #c6cbcd;
-  width: 39px;
-  line-height: 39px;
+  width: 33px;
+  line-height: 33px;
   text-align: center;
 }

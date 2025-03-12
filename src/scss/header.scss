@@ -20,19 +20,17 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 36px;
-    margin-bottom: 129px;
     border-bottom: 2px solid #babbc5;
     .menu {
       display: flex;
       &__item {
         .menu__link {
-          font-size: 13px;
           font-weight: 700;
           color: #ffffff;
           text-transform: uppercase;
           border-bottom: 2px solid transparent;
           padding-bottom: 41px;
-          padding: 0 28px;
+
           &:hover {
             font-size: 13px;
             font-weight: 700;
@@ -55,15 +53,12 @@
   }
   .first-screen {
     &__title {
-      @include first_title;
-      margin-bottom: 32px;
+      text-align: center;
     }
     &__desc p {
-      font-size: 24px;
       font-weight: 400;
       color: #ffffff;
       text-align: center;
-      margin-bottom: 80px;
     }
     &__link {
       @include link_normal;
@@ -73,6 +68,82 @@
     }
     &__link:active {
       @include link_active;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .header__nav {
+      margin-bottom: 129px;
+    }
+    .menu__link {
+      font-size: 13px;
+      padding: 0 28px;
+    }
+    .first-screen__title {
+      @include first_title;
+      margin-bottom: 32px;
+    }
+    .first-screen__desc {
+      margin-bottom: 80px;
+    }
+    .first-screen__desc p {
+      font-size: 24px;
+    }
+    .first-screen__link {
+      width: 370px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 970px;
+    }
+    .header__nav {
+      margin-bottom: 186px;
+    }
+    .menu__link {
+      font-size: 12px;
+      padding: 0 20px;
+    }
+    .first-screen__title {
+      font-size: 48px;
+      margin-bottom: 62px;
+      color: #fff;
+    }
+    .first-screen__desc {
+      margin-bottom: 90px;
+    }
+    .first-screen__desc p {
+      font-size: 18px;
+    }
+    .first-screen__link {
+      width: 314px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+    .header__menu {
+      display: none;
+    }
+    .header__nav {
+      border: none;
+    }
+    .first-screen__title {
+      font-size: 36px;
+      margin-bottom: 33px;
+      color: #fff;
+    }
+    .first-screen__desc {
+      margin-bottom: 50px;
+    }
+    .first-screen__desc p {
+      font-size: 14px;
+    }
+    .first-screen__link {
+      width: 280px;
     }
   }
 }

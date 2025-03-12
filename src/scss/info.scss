@@ -1,0 +1,107 @@
+.info {
+  background-color: #353c65;
+  padding: 71px 0;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px; //отмена отступа по краям
+  }
+  &__item {
+    margin: 0 15px; //безопасный отступ
+  }
+  &__title {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .info__title--location,
+  .info__title--about {
+    margin-bottom: 29px;
+  }
+  .info__title--social {
+    margin-bottom: 49px;
+  }
+  &__desc p {
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+  }
+  .info__social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1201px) {
+    .info__item--location,
+    .info__item--about {
+      width: 370px;
+    }
+    .info__item--social {
+      width: 170px;
+    }
+    .info__title {
+      font-size: 18px;
+    }
+    .info__desc p {
+      font-size: 18px;
+    }
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-linkedin {
+      @include social-icon-desctop;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 970px;
+    }
+    .info__item--location,
+    .info__item--about {
+      width: 315px;
+    }
+    .info__item--social {
+      width: 144px;
+    }
+    .info__title {
+      font-size: 14px;
+    }
+    .info__desc p {
+      font-size: 14px;
+    }
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-linkedin {
+      @include social-icon-tablet;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+    .info__wrap {
+      flex-wrap: wrap;
+      gap: 70px;
+    }
+    .info__item {
+      width: 100%;
+    }
+    .info__social {
+      width: 130px;
+      margin: auto;
+    }
+    .info__title {
+      font-size: 14px;
+    }
+    .info__desc p {
+      font-size: 14px;
+    }
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-linkedin {
+      @include social-icon-tablet;
+    }
+  }
+}

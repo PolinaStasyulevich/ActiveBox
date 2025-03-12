@@ -1,7 +1,8 @@
 .gallery {
+  width: 100%;
   &__wrap {
     display: flex;
-
+    flex-wrap: wrap;
     .card {
       position: relative;
 
@@ -17,7 +18,7 @@
       }
 
       .card-image {
-        width: 378px;
+        width: 100%;
         height: 340px;
       }
 
@@ -37,15 +38,48 @@
         background-color: rgba(255, 67, 67, 0.8);
         z-index: 3;
         color: #fff;
-
         h3 {
           color: #ffffff;
+          font-weight: 900;
         }
-
-        .overlay__desc p {
+        p {
           color: #ffffff;
+          font-weight: 400;
         }
       }
+    }
+  }
+  @media (min-width: 1201px) {
+    .card {
+      width: 25%;
+    }
+    .overlay {
+      h3 {
+        font-size: 24px;
+      }
+
+      .overlay__desc p {
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .card {
+      width: 25%;
+    }
+    .overlay {
+      h3 {
+        font-size: 18px;
+      }
+
+      .overlay__desc p {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .card {
+      width: 50%;
     }
   }
 }
