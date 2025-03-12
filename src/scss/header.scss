@@ -147,3 +147,41 @@
     }
   }
 }
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+.burger-menu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  transition: 0.3s;
+}
+.header__menu {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .burger-menu {
+    display: flex;
+  }
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(37, 43, 73, 0.9);
+    padding: 20px;
+    text-align: center;
+  }
+  .header__menu.active {
+    display: flex;
+  }
+}

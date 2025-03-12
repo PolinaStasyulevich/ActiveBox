@@ -24,4 +24,11 @@
       font-size: 14px;
     }
   }
+
+  @media (max-width: 767px) {
+    .footer__copyright,
+    .footer__author {
+      font-size: 14px;
+    }
+  }
 }
