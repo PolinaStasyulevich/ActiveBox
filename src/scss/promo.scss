@@ -1,4 +1,27 @@
 .promo {
-  background-color: #353c65;
-  padding: 71px 0;
+  background-color: #ffffff;
+  padding: 119px 0 114px 0;
+  &__title {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  &__desc {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  &__link {
+    @include link_normal;
+  }
+  &__link:hover {
+    @include link_hover;
+  }
+  &__link:active {
+    @include link_active;
+  }
 }
